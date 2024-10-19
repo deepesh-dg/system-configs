@@ -20,16 +20,10 @@ echo "Installing brew files"
 brew bundle --file ~/system-configs/macos/dotfiles/Brewfile
 
 echo "installing mas apps from appstore"
-echo "installing WhatsApp"
-mas install 310633997
-echo "installing CleanMyMac"
-mas install 1339170533
-echo "installing Telegram"
-mas install 747648890
-echo "installing DaVinciResolve"
-mas install 571213070
-echo "installing Dropover"
-mas install 1355679052
+./mas.sh
+
+echo "MacOS System settings configuration started..."
+./settings.sh
 
 # Set zsh as default shell
 chsh -s $(which zsh)
