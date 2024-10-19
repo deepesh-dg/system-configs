@@ -20,10 +20,10 @@ echo "Installing brew files"
 brew bundle --file ~/system-configs/macos/dotfiles/Brewfile
 
 echo "installing mas apps from appstore"
-./mas.sh
+/bin/bash ~/system-configs/macos/mas.sh
 
 echo "MacOS System settings configuration started..."
-./settings.sh
+/bin/bash ~/system-configs/macos/settings.sh
 
 # Set zsh as default shell
 chsh -s $(which zsh)
