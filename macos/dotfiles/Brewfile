@@ -34,5 +34,3 @@ cask "postman"
 cask "airdroid"
 cask "discord"
 cask "obsidian"
-
-end
