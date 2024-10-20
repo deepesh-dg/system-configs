@@ -1,21 +1,22 @@
 #!/bin/bash
 
-# appear all brew installed apps to mac launchpad
-defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock
+echo "Resetting LaunchPad to show all Brew-installed apps..."
+defaults write com.apple.dock ResetLaunchPad -bool true
+killall Dock
+echo "LaunchPad reset successfully!"
 
-# Set date and time automatically
-sudo systemsetup -setusingnetworktime on
+echo "Setting date and time to automatic..."
+if sudo systemsetup -setusingnetworktime on; then
+  echo "Date and time set to automatic."
+else
+  echo "Failed to set date and time to automatic."
+fi
 
-# Enable 24-hour time format
+echo "Enabling 24-hour time format..."
 defaults write NSGlobalDomain AppleICUForce24HourTime -bool true
+echo "24-hour time format enabled!"
 
-echo "Date and time set to automatic and 24-hour time format enabled!"
-
-# Enable Hover Text
+echo "Enabling Hover Text..."
 defaults write com.apple.universalaccess hoverTextEnabled -bool true
-
-# Set Hover Text activation to 'Cmd' key
 defaults write com.apple.universalaccess hoverTextActivationModifier -string "command"
-
-echo "Hover Text enabled, press 'Cmd' to display large text."
-
+echo "Hover Text enabled. Press 'Cmd' to display large text."
