@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "clone git system configs"
-git clone git@github.com:deepesh-dg/system-configs.git ~/system-configs
+git clone https://github.com/deepesh-dg/system-configs.git ~/system-configs
 
 echo "Installing Oh My Zsh"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
