@@ -11,7 +11,7 @@ ln -sf ~/system-configs/macos/dotfiles/.vimrc ~/.vimrc
 ln -sf ~/system-configs/macos/dotfiles/.gitconfig ~/.gitconfig
 
 echo "Installing brew"
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+sudo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 echo "Installing brew files"
 brew bundle --file ~/system-configs/macos/dotfiles/Brewfile
