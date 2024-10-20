@@ -8,13 +8,6 @@ else
   exit 1
 fi
 
-echo "Installing dotfiles"
-
-# Symlink dotfiles to home directory
-ln -sf ~/system-configs/macos/dotfiles/.zshrc ~/.zshrc
-ln -sf ~/system-configs/macos/dotfiles/.vimrc ~/.vimrc
-ln -sf ~/system-configs/macos/dotfiles/.gitconfig ~/.gitconfig
-
 echo "Installing Homebrew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
@@ -61,5 +54,12 @@ fi
 
 echo "Applying new zshrc configuration"
 zsh -c "source ~/.zshrc"
+
+echo "Installing dotfiles"
+
+# Symlink dotfiles to home directory
+ln -sf ~/system-configs/macos/dotfiles/.zshrc ~/.zshrc
+ln -sf ~/system-configs/macos/dotfiles/.vimrc ~/.vimrc
+ln -sf ~/system-configs/macos/dotfiles/.gitconfig ~/.gitconfig
 
 echo "Setup completed. Please restart your system..."
