@@ -26,9 +26,10 @@ echo "MacOS System settings configuration started..."
 chsh -s $(which zsh)
 
 echo "Installing Oh My Zsh"
-zsh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 echo "applying new zshrc config"
+zsh
 source ~/.zshrc
 
 echo "Installing oh-my-zsh plugins"
