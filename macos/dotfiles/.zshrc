@@ -32,7 +32,7 @@ alias ls="ls --color"
 PROMPT="%n@%m %1~ %# "
 
 # ZSH Theme
-ZSH_THEME="dracula"
+ZSH_THEME="agnoster"
 
 plugins=(git zsh-syntax-highlighting zsh-autosuggestions zsh-completions)
 
