@@ -25,6 +25,8 @@ setopt hist_find_no_dups
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 
+alias ls="ls --color"
+
 # Customize the prompt (example)
 PROMPT="%n@%m %1~ %# "
 
