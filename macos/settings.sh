@@ -1,4 +1,7 @@
-#!/bin/bashn
+#!/bin/bash
+
+# appear all brew installed apps to mac launchpad
+defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock
 
 # Set date and time automatically
 sudo systemsetup -setusingnetworktime on
