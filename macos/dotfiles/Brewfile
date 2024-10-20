@@ -8,6 +8,7 @@ brew "pnpm"
 brew "ollama"
 brew "openssl"
 brew "tmux"
+brew "jandedobbeleer/oh-my-posh/oh-my-posh"
 
 cask "iriunwebcam"
 cask "figma"

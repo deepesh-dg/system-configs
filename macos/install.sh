@@ -51,6 +51,14 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/p
 git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-completions.git $ZSH_CUSTOM/plugins/zsh-completions
 
+echo "installing oh-my-posh theme"
+if git clone https://github.com/JanDeDobbeleer/oh-my-posh.git ~/.oh-my-posh; then
+  echo "Git clone successful"
+else
+  echo "Failed to clone git repository. Exiting..."
+  exit 1
+fi
+
 echo "Applying new zshrc configuration"
 zsh -c "source ~/.zshrc"
 

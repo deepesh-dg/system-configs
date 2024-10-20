@@ -37,3 +37,10 @@ ZSH_THEME="agnoster"
 plugins=(git zsh-syntax-highlighting zsh-autosuggestions zsh-completions)
 
 source $ZSH/oh-my-zsh.sh
+
+# Oh My Posh prompt
+eval "$(oh-my-posh init zsh --config ~/.oh-my-posh/themes/atomic.omp.json)"
+
+if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
+  eval "$(oh-my-posh init zsh)"
+fi
