@@ -2,6 +2,7 @@
 
 # Add custom bin directories to PATH
 export PATH="$HOME/bin:$PATH"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Enable command auto-correction
 setopt CORRECT
