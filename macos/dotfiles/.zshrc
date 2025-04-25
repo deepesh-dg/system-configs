@@ -44,3 +44,4 @@ eval "$(oh-my-posh init zsh --config ~/.oh-my-posh/themes/atomic.omp.json)"
 if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
   eval "$(oh-my-posh init zsh)"
 fi
+export PATH="/opt/homebrew/opt/node@22/bin:$PATH"
