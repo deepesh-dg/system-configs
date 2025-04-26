@@ -45,3 +45,11 @@ if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
   eval "$(oh-my-posh init zsh)"
 fi
 export PATH="/opt/homebrew/opt/node@22/bin:$PATH"
+
+# pnpm
+export PNPM_HOME="/Users/deepesh/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
