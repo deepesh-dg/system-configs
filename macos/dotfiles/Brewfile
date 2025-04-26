@@ -12,6 +12,7 @@ brew "jandedobbeleer/oh-my-posh/oh-my-posh"
 brew "docker"
 brew "go"
 brew "python"
+brew "uv"
 
 cask "font-fira-code"
 cask "figma"
