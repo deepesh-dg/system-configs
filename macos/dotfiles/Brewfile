@@ -13,6 +13,7 @@ brew "docker"
 brew "go"
 brew "python"
 brew "uv"
+brew "git-lfs"
 
 cask "font-fira-code"
 cask "figma"
