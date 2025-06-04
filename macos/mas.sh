@@ -20,6 +20,4 @@ install_app() {
 install_app "WhatsApp" 310633997
 install_app "CleanMyMac" 1339170533
 install_app "Telegram" 747648890
-install_app "DaVinci Resolve" 571213070
 install_app "Dropover" 1355679052
-install_app "Bitwarden" 1352778147
